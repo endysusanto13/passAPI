@@ -1,6 +1,6 @@
 This file shows the actual password for testing purpose
 
-Username: sggalvin:
+Username: sggalvin
 Password: Galvin!@123
 
 Username: sgendy
