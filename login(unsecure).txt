@@ -8,3 +8,6 @@ Password: PassEndy-123
 
 Username: sglauretta
 Password: SlingShot2020!
+
+Username: idendy
+Password: AyamPenyet-123
