@@ -10,8 +10,25 @@ def check_username(username)
   return false
 end
 
+def check_password(password)
+  hashed_password = Digest::SHA2.hexdigest(password)
+  
+  @login_database.each_with_index do |data, index|
+    return true if (data.include? " || " + hashed_password)
+  end
+  return false
+end
+
 
 puts "Enter your username (case sensitive):"
 username = gets.chomp
 
-password_exist = check_username username
+user_exist = check_username username
+
+
+puts "Enter your password (case sensitive):"
+password = gets.chomp
+
+
+password_exist = check_password password
+puts password_exist
